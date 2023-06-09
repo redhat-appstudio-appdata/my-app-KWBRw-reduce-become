@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-hsne
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/mramdani-tenant/my-app/devfile-sample-java-springboot-basic-hsne@sha256:7a317f43fffea9ef1b9aea8451198c6dc4acb9b27709fce59d65d9d6b0ad759c
+        name: my-java-springboot
+        resources: {}
+status: {}
